@@ -12,22 +12,24 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 app.get("/", function(req, res){
 
-  res.sendFile(__dirname + "/login.html")
+  res.sendFile(__dirname + "/index.html")
 })
+
+/*
 app.get("/login", function(req, res){
   res.redirect("/")
-})
+})*/
 
 
 
 
-app.post("/login", function(req, res){
+/*app.post("/login", function(req, res){
   const email = req.body.Email;
   const pass = req.body.Password;
   console.log("my email "+ email + "password" + pass);
 
   res.sendFile(__dirname + "/index.html")
-})
+})*/
 
 
 
